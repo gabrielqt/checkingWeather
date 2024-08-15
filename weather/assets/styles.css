@@ -1,0 +1,125 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0f0f0f;
+    font-family: "Krub",sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-box{
+    max-width: 450px;
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.weather-box{
+    display: flex;
+    color: white;
+    opacity: 1.0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+.icon{
+    transform: scale(2.0);
+    height: 3vh;
+    margin-left: 1vw;
+}
+
+.temp{
+    font-size:2rem;
+    color: white;
+}
+
+h2{
+    margin-top: 1rem;
+    color: white;
+}
+
+.form{
+    max-width: 100%;
+}
+
+
+
+#inp-city{
+    background-color: black;
+    font-family: "Krub", sans-serif;
+    max-width: 40vw;
+    outline: none;
+    border: 0px;
+    border-radius: 15px;
+    padding: 0.4rem;
+    font-weight: 600;
+}
+
+#inp-city:not(:focus){
+    color: white;
+}
+
+#inp-city:focus{
+    color: white;
+}
+
+#btn-search{
+    color: white;
+    float: right;
+    padding: 5px;
+    width: 3rem;
+    border: none;
+    border-radius: 32px;
+    background-color: black;
+    transition: 0.2s linear;
+}
+
+#btn-search:hover{
+    background-color: white;
+    color: black;
+}
+
+.error{
+    color: rgb(170, 10, 10);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px aliceblue;
+}
+
+
+.loading{
+    display: none;
+    justify-content: center;
+    color: white;
+    margin: 2rem auto;
+    width: 23%;
+}
+
+.loading{
+    border: 5px solid white;
+    height: 6vh;
+    width: 6vh;
+    border-radius: 100%;
+    border-left: 5px solid white;
+    border-right: 5px solid aqua;
+    border-top: 0px;
+    border-bottom: 0px;
+    animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation{
+    to{transform: rotate(360deg);}
+}
